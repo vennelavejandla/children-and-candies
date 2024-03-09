@@ -1,0 +1,13 @@
+n=int(input())
+for i in range(1,n+1):
+  t,x=map(int,input().split())#noof children =t candies=X
+  if x>=t:
+    print("0")
+  else:
+    z=t-x
+    if z%t==0:
+      print(z//4)
+    else:
+      print((z//4)+1)
+  
+  
